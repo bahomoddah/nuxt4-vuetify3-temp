@@ -3,9 +3,25 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
 
-  css: ["vuetify/lib/styles/main.sass"],
+  css: ["~/assets/scss/main.scss"],
 
-  modules: ["@nuxt/eslint", "@nuxt/image", "@nuxt/icon", "@nuxtjs/i18n"],
+  modules: [
+    "@nuxt/eslint",
+    "@nuxt/image",
+    "@nuxt/icon",
+    "@nuxtjs/i18n",
+    "@pinia/nuxt",
+  ],
+
+  runtimeConfig: {
+    public: {
+      apiBaseURL: process.env.BASE_URL,
+    },
+  },
+
+  imports: {
+    dirs: ["store", "composables", "utils"],
+  },
 
   build: {
     transpile: ["vuetify", "vue3-apexcharts"],

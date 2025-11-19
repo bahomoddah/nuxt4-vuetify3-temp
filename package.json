@@ -15,9 +15,11 @@
     "@nuxt/icon": "^2.1.0",
     "@nuxt/image": "^2.0.0",
     "@nuxtjs/i18n": "^10.2.1",
+    "@pinia/nuxt": "^0.11.3",
     "apexcharts": "^5.3.6",
     "eslint": "^9.39.1",
     "nuxt": "^4.2.1",
+    "pinia": "^3.0.4",
     "vue": "^3.5.24",
     "vue-router": "^4.6.3",
     "vue3-apexcharts": "^1.10.0"
