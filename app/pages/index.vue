@@ -1,6 +1,6 @@
 <template>
   <div>
-    <DashboardPage />
+    <DashboardDetails />
   </div>
 </template>
 

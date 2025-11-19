@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <AppNavigation />
+    <BaseAppNavigation />
     <v-main>
       <v-container fluid>
         <slot />
@@ -9,8 +9,4 @@
   </v-app>
 </template>
 
-<script setup lang="ts">
-useHead({
-  titleTemplate: (title) => (title ? `${title} - Template` : "Template"),
-});
-</script>
+<script setup lang="ts"></script>

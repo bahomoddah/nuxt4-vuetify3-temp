@@ -2,7 +2,7 @@
   <div>
     <v-row>
       <v-col v-for="stat in stats" :key="stat.title" cols="12" sm="6" md="3">
-        <StatCard :stat="stat" />
+        <DashboardStatCard :stat="stat" />
       </v-col>
     </v-row>
 
@@ -11,7 +11,7 @@
         <v-card>
           <v-card-title>{{ $t("revenue") }}</v-card-title>
           <v-card-text>
-            <ApexChart type="area" :options="revenueChartOptions" :series="revenueSeries" />
+            <DashboardApexChart type="area" :options="revenueChartOptions" :series="revenueSeries" />
           </v-card-text>
         </v-card>
       </v-col>
