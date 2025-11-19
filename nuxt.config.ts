@@ -1,4 +1,4 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
@@ -8,12 +8,21 @@ export default defineNuxtConfig({
   modules: ["@nuxt/eslint", "@nuxt/image", "@nuxt/icon", "@nuxtjs/i18n"],
 
   build: {
-    transpile: ["vuetify"],
+    transpile: ["vuetify", "vue3-apexcharts"],
   },
 
   vite: {
     ssr: {
       noExternal: ["vuetify"],
+    },
+    optimizeDeps: {
+      include: ["vue3-apexcharts"],
+    },
+    plugins: [vuetify({ autoImport: true })],
+    vue: {
+      template: {
+        transformAssetUrls,
+      },
     },
   },
 
@@ -39,6 +48,6 @@ export default defineNuxtConfig({
 
   devServer: {
     port: 8080,
-    host: process.env.HOST || "localhost",
+    host: (globalThis as any).process?.env?.HOST || "localhost",
   },
 });

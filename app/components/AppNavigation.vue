@@ -12,14 +12,15 @@
 
     <template #append>
       <div class="pa-2">
-        <ThemeSwitcher />
         <LocaleSwitcher />
+        <ThemeSwitcher />
+        <LocaleSwitcher1 />
       </div>
     </template>
   </v-navigation-drawer>
 
   <v-app-bar app>
-    <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+    <v-app-bar-nav-icon @click="drawer = !drawer"/>
     <v-app-bar-title>{{ $t("dashboard") }}</v-app-bar-title>
     <v-spacer />
   </v-app-bar>
