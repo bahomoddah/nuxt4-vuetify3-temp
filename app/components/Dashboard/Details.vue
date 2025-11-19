@@ -20,7 +20,7 @@
         <v-card>
           <v-card-title>{{ $t("sales") }}</v-card-title>
           <v-card-text>
-            <ApexChart type="donut" :options="salesChartOptions" :series="salesSeries" />
+            <DashboardApexChart type="donut" :options="salesChartOptions" :series="salesSeries" />
           </v-card-text>
         </v-card>
       </v-col>
