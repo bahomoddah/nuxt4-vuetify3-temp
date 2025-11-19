@@ -1,0 +1,15 @@
+{
+  "dashboard": "Dashboard",
+  "analytics": "Analytics",
+  "users": "Users",
+  "settings": "Settings",
+  "profile": "Profile",
+  "logout": "Logout",
+  "revenue": "Revenue",
+  "sales": "Sales",
+  "visitors": "Visitors",
+  "conversions": "Conversions",
+  "light": "Light",
+  "dark": "Dark",
+  "system": "System"
+}
