@@ -12,9 +12,9 @@
 
     <template #append>
       <div class="pa-2">
-        <LocaleSwitcher />
-        <ThemeSwitcher />
-        <LocaleSwitcher1 />
+        <BaseLocaleSwitcher />
+        <BaseThemeSwitcher />
+        <BaseLocaleSwitcher1 />
       </div>
     </template>
   </v-navigation-drawer>
