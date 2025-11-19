@@ -48,6 +48,6 @@ export default defineNuxtConfig({
 
   devServer: {
     port: 8080,
-    host: (globalThis as any).process?.env?.HOST || "localhost",
+    host: process.env.HOST || "localhost",
   },
 });
