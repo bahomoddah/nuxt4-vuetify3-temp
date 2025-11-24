@@ -21,24 +21,28 @@ export default defineNuxtPlugin((nuxtApp) => {
       themes: {
         light: {
           colors: {
-            primary: "#1867C0",
-            secondary: "#5CBBF6",
-            accent: "#005CAF",
-            error: "#FF5252",
-            info: "#2196F3",
-            success: "#4CAF50",
-            warning: "#FFC107",
+            primary: "#03ae67", // --primary-600
+            secondary: "#ff375e", // --secondary-500
+            accent: "#05603d", // --primary-800 (using as accent)
+            error: "#ef4444", // --danger-500
+            info: "#31d689", // --primary-400
+            success: "#10b981", // --success-500
+            warning: "#eab308", // --warning-500
+            background: "#fafafa", // --neutral-50
+            surface: "#ffffff", // --accent-color-white
           },
         },
         dark: {
           colors: {
-            primary: "#2196F3",
-            secondary: "#424242",
-            accent: "#FF4081",
-            error: "#FF5252",
-            info: "#2196F3",
-            success: "#4CAF50",
-            warning: "#FB8C00",
+            primary: "#0dbc70", // --primary-500 (lighter for dark mode)
+            secondary: "#ff6983", // --secondary-400
+            accent: "#31d689", // --primary-400
+            error: "#f87171", // --danger-400
+            info: "#6ce9aa", // --primary-300
+            success: "#34d399", // --success-400
+            warning: "#facc15", // --warning-400
+            background: "#060606", // --neutral-950
+            surface: "#1b1b1b", // --neutral-800
           },
         },
       },
