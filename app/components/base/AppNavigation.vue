@@ -14,7 +14,6 @@
       <div class="pa-2">
         <BaseLocaleSwitcher />
         <BaseThemeSwitcher />
-        <!-- <BaseLocaleSwitcher1 /> -->
       </div>
     </template>
   </v-navigation-drawer>

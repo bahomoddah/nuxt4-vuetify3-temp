@@ -2,7 +2,7 @@
   <div>
     <DashboardDetails />
     <div class="flex justify-center my-10">
-      <PrimaryBtn />
+      <BasePrimaryBtn />
     </div>
   </div>
 </template>
