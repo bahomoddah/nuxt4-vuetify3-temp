@@ -1,5 +1,7 @@
 <template>
   <v-btn class="custom-primary-btn" variant="text"> Vuetify Button (Custom Class) </v-btn>
+  <v-btn class="bg-primary text-black" variant="text"> Vuetify Button (Custom Class) </v-btn>
+
 </template>
 
 <style lang="scss" scoped>
@@ -12,7 +14,7 @@
 
   // Basic styling
   padding: 10px 20px;
-  border-radius: 8px;
+  // border-radius: 8px;
   border: none;
   cursor: pointer;
   font-weight: 500;
