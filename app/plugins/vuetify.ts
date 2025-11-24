@@ -34,9 +34,10 @@ export default defineNuxtPlugin((nuxtApp) => {
             error: getCssVariable("--danger-500"),
             info: getCssVariable("--primary-400"),
             success: getCssVariable("--success-500"),
-            warning: "#eab308",
-            background: "#fafafa",
-            surface: "#ffffff",
+            warning: getCssVariable("--warning-500"),
+            background: getCssVariable("--neutral-50"),
+            surface: getCssVariable("--accent-color-white"),
+            
             // primary: "#03ae67", // --primary-600
             // secondary: "#ff375e", // --secondary-500
             // accent: "#05603d", // --primary-800 (using as accent)
