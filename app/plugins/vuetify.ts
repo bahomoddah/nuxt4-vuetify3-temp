@@ -7,9 +7,9 @@ import { ar, en } from "vuetify/locale";
 export default defineNuxtPlugin((nuxtApp) => {
   const vuetify = createVuetify({
     locale: {
-      locale: "en",
-      fallback: "en",
-      messages: { en, ar },
+      locale: "ar",
+      fallback: "ar",
+      messages: { ar, en },
     },
     icons: {
       defaultSet: "mdi",
