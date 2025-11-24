@@ -6,9 +6,7 @@ import { ar, en } from "vuetify/locale";
 
 function getCssVariable(name: string) {
   if (typeof window !== "undefined") {
-    return getComputedStyle(document.documentElement)
-      .getPropertyValue(name)
-      .trim();
+    return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
   }
   return "";
 }
@@ -28,6 +26,7 @@ export default defineNuxtPlugin((nuxtApp) => {
       defaultTheme: "light",
       themes: {
         light: {
+          dark: false,
           colors: {
             primary: getCssVariable("--primary-600"),
             secondary: getCssVariable("--secondary-500"),
@@ -50,8 +49,8 @@ export default defineNuxtPlugin((nuxtApp) => {
           },
         },
         dark: {
+          dark: true,
           colors: {
-
             primary: getCssVariable("--primary-600"),
             secondary: getCssVariable("--secondary-500"),
             accent: getCssVariable("--primary-800"),

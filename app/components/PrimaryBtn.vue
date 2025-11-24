@@ -1,9 +1,20 @@
 <template>
-  <v-btn class="custom-primary-btn" variant="text"> Vuetify Button (Custom Class) </v-btn>
-  <v-btn class="bg-primary text-surface" variant="text"> Vuetify Button (Custom Class) </v-btn>
-
+  <v-btn class="custom-primary-btn" variant="text" @click="showAlert">
+    Vuetify Button (Custom Class)
+  </v-btn>
+  <v-btn class="bg-primary text-surface" variant="text" @click="showAlert"> showAlert </v-btn>
 </template>
-
+<script setup lang="ts">
+const globalStore = useGlobalStore();
+const showAlert = () => {
+  const res = {
+    message: "This is a primary button alert!",
+    success: false,
+  };
+  globalStore.setAlertData(res);
+  
+};
+</script>
 <style lang="scss" scoped>
 .custom-primary-btn {
   // Using the requested variable for background
