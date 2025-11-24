@@ -1,6 +1,6 @@
 <template>
   <v-btn class="custom-primary-btn" variant="text"> Vuetify Button (Custom Class) </v-btn>
-  <v-btn class="bg-primary text-black" variant="text"> Vuetify Button (Custom Class) </v-btn>
+  <v-btn class="bg-primary text-surface" variant="text"> Vuetify Button (Custom Class) </v-btn>
 
 </template>
 
