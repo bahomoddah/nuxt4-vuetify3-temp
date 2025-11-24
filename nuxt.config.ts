@@ -34,7 +34,14 @@ export default defineNuxtConfig({
     optimizeDeps: {
       include: ["vue3-apexcharts"],
     },
-    plugins: [vuetify({ autoImport: true })],
+    plugins: [
+      vuetify({
+        autoImport: true,
+        styles: {
+          configFile: "/assets/scss/_vuetify_settings.scss",
+        },
+      }),
+    ],
     vue: {
       template: {
         transformAssetUrls,
