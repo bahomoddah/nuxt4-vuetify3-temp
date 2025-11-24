@@ -11,7 +11,7 @@
         <v-card>
           <v-card-title>{{ $t("revenue") }}</v-card-title>
           <v-card-text>
-            <DashboardApexChart type="area" :options="revenueChartOptions" :series="revenueSeries" />
+            <DashboardApexChart type="bar" :options="revenueChartOptions" :series="revenueSeries" />
           </v-card-text>
         </v-card>
       </v-col>
@@ -20,7 +20,7 @@
         <v-card>
           <v-card-title>{{ $t("sales") }}</v-card-title>
           <v-card-text>
-            <DashboardApexChart type="donut" :options="salesChartOptions" :series="salesSeries" />
+            <DashboardApexChart type="pie" :options="salesChartOptions" :series="salesSeries" />
           </v-card-text>
         </v-card>
       </v-col>
@@ -65,7 +65,7 @@ const salesSeries = ref([44, 55, 13, 33]);
 
 const revenueChartOptions = computed(() => ({
   chart: {
-    type: "area",
+    type: "bar",
     height: 350,
     zoom: { enabled: false },
   },
@@ -82,7 +82,7 @@ const revenueChartOptions = computed(() => ({
 
 const salesChartOptions = computed(() => ({
   chart: {
-    type: "donut",
+    type: "pie",
     height: 350,
   },
   labels: ["Electronics", "Fashion", "Home", "Sports"],
